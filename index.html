@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EscoBike</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@400;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@300;400;500;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="position-relative" id="home">
+    <!-- navbar -->
+    <div class="bg-3 text-white fs-5 py-1 text-center op"> التوصيل المجاني داخل الرياض فقط (سعر التوصيل لكل طلباتك واحد)
+    </div>
+    <nav
+        class="navbar navbar-light bg-light px-3 px-sm-5 bg-main py-0 position-sticky top-0 start-0 end-0 border-bottom border-white">
+        <div class="container m-auto px-0">
+            <a class="navbar-brand"><img class="logo rounded-3" src="./imges/logo.png" alt="logo" /></a>
+            <div class="d-flex">
+                <a href="./pages/loginPage.html">
+                    <button class="btn bg-white text-main text-main fw-bold px-2 px-md-5 py-2">
+                        الصفحة الرئيسية
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- slidr -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner min-vh-35 bg-sec">
+            <div class="carousel-item active min-vh-35">
+                <div class="carousel-caption top-50 transform-50">
+                    <h1 class="text-main fs-50">اسكوبايك</h1>
+                    <h3 class="fw-bold">ألعاب للمتعة</h3>
+                    <img class="logo rounded-3" src="./imges/logo.png" alt="logo" />
+                </div>
+            </div>
+            <div class="carousel-item  bg-main min-vh-35 position-relative">
+                <div class="carousel-caption top-50 transform-50">
+                    <h1 class="text-sec fs-50">عِزوة الرَّبع</h1>
+                </div>
+            </div>
+            <div class="carousel-item min-vh-35 position-relative bg-3">
+                <div class="carousel-caption top-50 transform-50">
+                    <h1 class="text-main fs-50 ">نقِّطها واشحن بطاقتك</h1>
+                </div>
+            </div>
+            <div class="carousel-item min-vh-35 position-relative bg-4">
+                <div class="carousel-caption top-50 transform-50">
+                    <h1 class="text-main fs-50">اشترك باحدى باقاتنا
+                        واحصل على جوائز شهرية</h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- adds -->
+    <div id="adds">
+    </div>
+    <!-- products -->
+    <section class="row container mx-auto my-5 px-0 " id="products">
+        <h1 class="fs-1 text-main text-center my-4 fw-bold">المنتجات</h1>
+    </section>
+    <!-- footer -->
+    <footer class="bg-main text-white text-center text-lg-start py-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center text-md-end ">
+                    <h5 class="text-uppercase">من نحن</h5>
+                    <p>
+                        شركة اسكوبايك لكل جديد في عالم الألعاب. <br>بيع مستلزمات الاسرة من ادوات منزلية وكهربائية - بيع
+                        دراجات اطفال وكبار.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <div>
+                        <a href="https://www.facebook.com/Ezwat-Alrabe-100467739487049"
+                            class="text-white me-4 text-decoration-none fs-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/Ezwat_Alrabe" class="text-white me-4 text-decoration-none fs-5">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ezwat.alrabe/"
+                            class="text-white me-4 text-decoration-none fs-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.snapchat.com/add/ezwat-alrabe?share_id=S36VWjqgqu4&locale=ar-AE"
+                            class="text-white me-4 text-decoration-none fs-4">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="py-3 text-center bg-4">
+        Copyright © 2022. All rights reserved.
+    </div>
+    <a href="" class="text-white text-decoration-none position-fixed whats">
+        <i class="fab fa-whatsapp d-block"></i>
+
+    </a>
+    <!-- Copyright -->
+    <script src="https://kit.fontawesome.com/289b476fa4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

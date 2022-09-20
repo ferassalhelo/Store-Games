@@ -1,0 +1,96 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Almarai', sans-serif;
+
+}
+
+nav {
+  z-index: 999;
+}
+
+.bg-main {
+  background-color: #0000FF !important;
+}
+
+.text-main {
+  color: #0000FF !important;
+}
+
+.bg-sec {
+  background-color: #79A9F5;
+}
+
+.text-sec {
+  color: #79A9F5;
+}
+
+
+
+.transform-50 {
+  transform: translateY(-50%);
+  bottom: initial !important;
+}
+
+.logo {
+  max-width: 160px;
+}
+
+.card-img-top {
+  height: 220px;
+  /* object-fit: contain; */
+}
+
+.whats {
+  bottom: 5vh;
+  right: 3vw;
+  font-size: 55px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 17px;
+  padding: 3px 5px 0 0;
+  z-index: 0;
+}
+
+.j {
+  /* width: 20%; */
+  min-width: 150px;
+}
+
+.l {
+  min-width: 220px;
+}
+
+.fs-50 {
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.min-vh-35{
+  min-height: 35vh;
+}
+
+.bg-3{background-color: #4B7BF5;}
+.bg-4{background-color: #C2E2F5;}
+
+.fdd{
+  width: 60px;
+  height: 60px;
+  order: 2;
+  left: 5px;
+  top:5px;
+  font-size: 13px;
+  transform: rotate(-45deg);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+.fs-50{  
+  font-size: 30px;
+  font-weight:800;
+  }
+.op{  font-size: 15px !important;}
+
+}

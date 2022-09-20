@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>dashpord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@400;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@300;400;500;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id='dashpord'>
+    <nav
+        class="navbar navbar-light bg-light px-3 px-sm-5 bg-main py-0 position-fixed top-0 start-0 end-0 border-bottom border-white">
+        <div class="container m-auto px-0">
+            <a class="navbar-brand"><img class="logo rounded-3" src="../imges/logo.png" alt="logo"></a>
+            <div class="d-flex">
+                <a href="/indx.html"> <button class="btn bg-white text-main fw-bold px-2 px-md-5 py-2">الصفحة الرئيسية
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <h1 class="fw-bold fs-2 text-center py-5 mt-5">لوحة التحكم</h1>
+    <form class="container m-auto" id="form">
+        <!-- id -->
+        <input type="hidden" id="hidden">
+        <!-- Name  -->
+        <div class="form-outline mb-4">
+            <label class="form-label fs-4" for="name">* إسم المتنج</label>
+            <input type="text" id="name" class="form-control p-2" maxlength="25" />
+
+        </div>
+
+        <!-- description -->
+        <div class="form-outline mb-4">
+            <label class="form-label fs-4" for="description">* وصف المنتج</label>
+            <input type="text" id="description" class="form-control p-2 " maxlength="100" />
+        </div>
+
+        <!-- price -->
+        <div class="form-outline mb-4">
+            <label class="form-label fs-4" for="price">* السعر</label>
+            <input class="form-control p-2" id="price" type="number"></input>
+        </div>
+
+        <!-- price -->
+        <div class="form-outline mb-4">
+            <label class="form-label fs-4" for="price2"> السعر قبل الخصم </label>
+            <input class="form-control p-2" id="price2" type="number"></input>
+        </div>
+
+
+        <!--img -->
+        <div class="form-outline mb-4">
+            <label for="uplodeImg" class="form-label fs-4">* تحميل صورة</label>
+            <div class="d-flex">
+                <button class="btn bg-main j text-white" id="selbtn">تحديد صورة</button>
+                <input type="text" class="form-control p-2" readonly id="namebox">
+                <label id="extlab"></label>
+                <img id="myimg" class="border-0 rounded-3" style="background-color: #e9ecef;" width="60px"
+                    height="40px">
+                <label id="upprogress"></label>
+            </div>
+        </div>
+
+        <!-- checout  -->
+
+        <div class="form-outline mb-4">
+            <input id="fd" type="checkbox" ></input>
+            <label class="form-label fs-5" for="pl"> توصيل مجاني </label>
+        </div>
+
+
+        <!-- Submit button -->
+        <button type="submit" class="btn bg-main text-white my-5 fw-bold py-2 l text-center me-auto px-5 d-block"
+            id="btn">إنشاء</button>
+    </form>
+
+    <!-- adds -->
+    <div class="mb-3 container m-auto">
+        <label for="addsDash" class="form-label">لوحة الإعلانات </label>
+        <textarea class="form-control" id="addsDash" value="'kkjjk" rows="5"></textarea>
+        <button type="submit" class="btn bg-main text-white my-5 fw-bold py-2 l text-center me-auto px-5 d-block"
+            id="btnAdds">تعديل الإعلان</button>
+    </div>
+
+    <!-- products table  -->
+
+    <h1 class="fw-bold fs-2 text-center py-5 mt-5">المنتجات</h1>
+    <table class="table align-middle mb-5 bg-white container m-auto">
+        <thead class="bg-light">
+            <tr>
+                <th>إسم المنتنج</th>
+                <th class="d-none d-md-table-cell">وصف المتنج</th>
+                <th class="d-none d-md-table-cell">السعر</th>
+                <th class="d-none d-md-table-cell"> السعر قبل الخصم</th>
+                <th class="d-none d-md-table-cell"> توصيل مجاني</th>
+                <th>تعديل</th>
+                <th>حذف</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <div class="text-white py-3 text-center bg-main">
+        Copyright © 2022. All rights reserved.
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="../js/script.js" type="module"></script>
+</body>
+
+</html>
