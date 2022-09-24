@@ -9,19 +9,19 @@ nav {
 }
 
 .bg-main {
-  background-color: #0000FF !important;
+  background-color:#01949A   !important;
 }
 
 .text-main {
-  color: #0000FF !important;
+  color:#01949A !important;
 }
 
 .bg-sec {
-  background-color: #79A9F5;
+  background-color: #004369
 }
 
 .text-sec {
-  color: #79A9F5;
+  color: #DB1F48;
 }
 
 
@@ -43,13 +43,14 @@ nav {
 .whats {
   bottom: 5vh;
   right: 3vw;
-  font-size: 55px;
-  width: 60px;
-  height: 60px;
+   z-index: 0;
+}
+
+.wa{ font-size: 55px;
+  width: 70px;
+  height: 70px;
   background-color: #25D366;
-  border-radius: 17px;
-  padding: 3px 5px 0 0;
-  z-index: 0;
+  border-radius: 50%;
 }
 
 .j {
@@ -70,8 +71,7 @@ nav {
   min-height: 35vh;
 }
 
-.bg-3{background-color: #4B7BF5;}
-.bg-4{background-color: #C2E2F5;}
+.bg-3{background-color:#E5DDC8;}
 
 .fdd{
   width: 60px;
@@ -93,4 +93,8 @@ nav {
   }
 .op{  font-size: 15px !important;}
 
+}
+
+.fs-sm{
+  font-size: 10px;
 }

@@ -163,7 +163,7 @@ if (pageName.id === "dashpord") {
                   <span class="fd">${doc.data().fd ? true : false}</span>
                 </td>
             <td>
-            <button type="button" class="edit btn bg-sec  btn-sm btn-rounded">
+            <button type="button" class="edit btn bg-sec text-white  btn-sm btn-rounded">
             تعديل
             </button>
             </td>
